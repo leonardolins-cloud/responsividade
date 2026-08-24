@@ -5,6 +5,8 @@
 }
 
 header{
+    color: aliceblue;
+    background-color: rgb(74, 156, 34);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +37,7 @@ header{
     display: flex;
     width: 400px;
     height: 200px;
-    border: solid 1px red;
+    border: solid 1px rgb(0, 0, 0);
 }
 
 .boxes{
@@ -51,12 +53,18 @@ header{
 .box{
     display: flex;
    width: 500px;
-   border: solid 1px red;
+   border: solid 1px rgb(0, 0, 0);
 
    img{
     width: 50%;
    }
    @media(max-width: 1000px){
      width: 90%;
+   }
+   @media(max-width: 550px){
+     flex-direction: column;
+     img{
+        width: 100%;
+     }
    }
 }
